@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kabita</title>
+    <title>HydraTiva</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -34,8 +34,8 @@
                                     d="M6.925 16.875Q5.2 16.225 4.1 14.713Q3 13.2 3 11.25q0-1.975.938-3.513Q4.875 6.2 6 5.15q1.125-1.05 2.062-1.6L9 3v2.475q0 .625.45 1.062q.45.438 1.075.438q.35 0 .65-.15q.3-.15.5-.425L12 6q.95.55 1.625 1.35t1.025 1.8l-1.675 1.675q-.05-.6-.287-1.175q-.238-.575-.638-1.05q-.35.2-.738.287q-.387.088-.787.088q-1.1 0-1.987-.612Q7.65 7.75 7.25 6.725q-.95.925-1.6 2.062Q5 9.925 5 11.25q0 .775.275 1.462q.275.688.75 1.213q.05-.5.287-.938q.238-.437.588-.787L9 10.1l2.15 2.1q.05.05.1.125t.1.125l-1.425 1.425q-.05-.075-.087-.125q-.038-.05-.088-.1L9 12.925l-.7.7q-.125.125-.212.287q-.088.163-.088.363q0 .3.175.537q.175.238.45.363ZM9 10.1Zm0 0ZM7.4 22L6 20.6L19.6 7L21 8.4L17.4 12H21v2h-5.6l-.5.5l1.5 1.5H21v2h-2.6l2.1 2.1l-1.4 1.4l-2.1-2.1V22h-2v-4.6l-1.5-1.5l-.5.5V22h-2v-3.6Z" />
                             </svg>
                         </span> -->
-                        <span class="font-bold text-first">Kabita.</span>
-                        <!-- <img class="w-32 lg:w-44" src="image/logo.png" alt=""> -->
+                        <!-- <span class="font-bold text-first">Kabita.</span> -->
+                        <img class="w-32 lg:w-44" src="image/logo-hydratriva-kecil.png" alt="">
                     </a>
                     <div class="hidden flex flex-row w-full lg:w-96">
                         <form class="w-full mx-auto">
@@ -134,7 +134,7 @@
                                         clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            Data Menu
+                            Data Produk
                         </div>
                         <div role="button"
                             class="font-poppins flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start hover:bg-gray-200 hover:text-first focus:bg-gray-200 focus:text-first active:bg-gray-200 active:text-first">
@@ -187,11 +187,11 @@
             <section id="dashboard"
                 class="font-poppins w-full flex flex-col mt-4 px-4 lg:px-36 pt-10 pb-20 bg-gray-100">
                 <div class="flex w-full mb-8">
-                    <h1 class="text-3xl">Data Menu</h1>
+                    <h1 class="text-3xl">Data Produk</h1>
                 </div>
                 <div class="flex flex-col gap-3 bg-white rounded-md p-8">
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="text-sm text-white px-2 py-2 bg-first hover:bg-secondary rounded-md w-32"
+                    <button class="p-2 rounded-md bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white w-40"
                         onclick="modalTambahData.showModal()">Tambah Data</button>
                     <dialog id="modalTambahData" class="modal">
                         <div class="modal-box">
@@ -203,7 +203,7 @@
                                     <input type="text" id="nama" placeholder="Masukan nama menu"
                                         class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
                                 </div>
-                                <div class="flex flex-col">
+                                <!-- <div class="flex flex-col">
                                     <label for="tipe">Tipe</label>
                                   
                                     <select name="tipe" id="tipe" class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
@@ -211,7 +211,7 @@
                                         <option value="Makanan">Makanan</option>
                                         <option value="Minuman">Minuman</option>
                                     </select>                                    
-                                </div>
+                                </div> -->
                                 <div class="flex flex-col">
                                     <label for="deskripsi">Deskripsi</label>
                                     <textarea name="deskripsi" id="deskripsi" placeholder="Masukan deskripsi menu"
@@ -278,7 +278,7 @@
                                 </div>
                                 <div class="flex flex-col mt-2">
                                     <button type="submit"
-                                        class="p-2 rounded-md bg-first text-white hover:bg-secondary">Tambah</button>
+                                        class="p-2 rounded-md bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white">Tambah</button>
                                 </div>
                             </form>
                         </div>
@@ -296,26 +296,18 @@
                                 <div class="flex flex-col">
                                     <label for="nama">Nama</label>
                                     <input type="text" id="nama" placeholder="Masukan nama menu"
-                                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first" value="Ayam Goreng">
-                                </div>
-                                <div class="flex flex-col">
-                                    <label for="tipe">Tipe</label>
-                                  
-                                    <select name="tipe" id="tipe" class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
-                                        <option value="Pilih" selected disabled>Pilih</option>
-                                        <option value="Makanan" selected>Makanan</option>
-                                        <option value="Minuman">Minuman</option>
-                                    </select>                                    
+                                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first" value="HydraTiva">
                                 </div>
                                 <div class="flex flex-col">
                                     <label for="deskripsi">Deskripsi</label>
                                     <textarea name="deskripsi" id="deskripsi" placeholder="Masukan deskripsi menu"
-                                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, molestias.</textarea>
+                                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">HydraTiva adalah alat penyiraman otomatis untuk tanaman stevia yang terintegrasi dengan
+                                        aplikasi.</textarea>
                                 </div>
                                 <div class="flex flex-col">
                                     <label for="harga">Harga</label>
                                     <input type="text" id="harga" placeholder="Masukan nomor harga anda"
-                                        class="input-number w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first" value="20000">
+                                        class="input-number w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first" value="1500000">
                                     <script>
                                         function formatRupiah(angka, prefix) {
                                             var number_string = angka.replace(/[^,\d]/g, '').toString(), //Menghapus huruf
@@ -370,11 +362,11 @@
                                     <label for="gambar">Gambar</label> 
                                     <!-- <img class="w-4" src="image/ayam-goreng.jpg" alt="">                                   -->
                                     <input type="file" id="gambar" placeholder="gambar"
-                                        class="w-full rounded-md bg-gray-100 file:mr-5 file:py-1 file:px-3 file:border-none file:w-full file:bg-gray-100 file:text-stone-700 hover:file:cursor-pointer hover:file:bg-red-50 hover:file:text-first focus:outline-none focus:ring focus:ring-first focus-border-first">
+                                        class="w-full rounded-md bg-gray-100 file:mr-5 file:py-1 file:px-3 file:border-none file:w-full file:bg-gray-100 file:text-stone-700 hover:file:cursor-pointer hover:file:bg-primary hover:file:text-white focus:outline-none focus:ring focus:ring-primary focus-border-primary">
                                 </div>
                                 <div class="flex flex-col mt-2">
                                     <button type="submit"
-                                        class="p-2 rounded-md bg-first text-white hover:bg-secondary">Tambah</button>
+                                        class="p-2 rounded-md bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white">Tambah</button>
                                 </div>
                             </form>
                         </div>
@@ -393,9 +385,9 @@
                                 class="flex flex-col mt-4 w-full gap-2 rounded-lg transition duration-300 font-poppins">
                                 <div class="flex gap-3 w-full">
                                     <button type="submit"
-                                        class="w-full p-2 rounded-md border-2 border-first bg-white text-first hover:bg-first hover:text-white">Tidak</button>
+                                        class="w-full p-2 rounded-md border-2 border-primary bg-white text-primary border-primary hover:bg-primary border-primary hover:text-white">Tidak</button>
                                     <button type="submit"
-                                        class="w-full p-2 rounded-md bg-first text-white hover:bg-secondary">Ya</button>
+                                        class="w-full p-2 rounded-md bg-red-600 border-red-600 text-white hover:bg-red-800">Ya</button>
                                 </div>
                             </form>
                         </div>
@@ -421,13 +413,13 @@
                                 <!-- row 1 -->
                                 <tr>
                                     <td>1.</td>
-                                    <td>Ayam Goreng</td>
-                                    <td class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                                        molestias.</td>
-                                    <td class="text-nowrap">Rp. 20.000</td>
+                                    <td>HydraTiva</td>
+                                    <td class="text-wrap">HydraTiva adalah alat penyiraman otomatis untuk tanaman stevia yang terintegrasi dengan
+                                        aplikasi.</td>
+                                    <td class="text-nowrap">Rp. 1.500.000</td>
                                     <td>20</td>
                                     <td>
-                                        <img class="rounded-lg w-16" src="image/ayam-goreng.jpg" alt="">
+                                        <img class="rounded-lg w-16" src="image/Group 185.png" alt="">
                                     </td>
                                     <td>
                                         <button onclick="modalEditData.showModal()" class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
@@ -441,13 +433,13 @@
                                 <!-- row 2 -->
                                 <tr>
                                     <td>2.</td>
-                                    <td>Es Teh</td>
+                                    <td>Daun Stevia Kering</td>
                                     <td class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
                                         molestias.</td>
-                                    <td class="text-nowrap">Rp. 20.000</td>
+                                    <td class="text-nowrap">Rp. 150.000</td>
                                     <td>20</td>
                                     <td>
-                                        <img class="rounded-lg w-16" src="image/es-teh.jpg" alt="">
+                                        <img class="rounded-lg w-16" src="image/Group 186.png" alt="">
                                     </td>
                                     <td>
                                         <button onclick="modalEditData.showModal()" class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
@@ -461,13 +453,33 @@
                                 <!-- row 3 -->
                                 <tr>
                                     <td>3.</td>
-                                    <td>Es Jeruk</td>
+                                    <td>Teh Stevia</td>
                                     <td class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
                                         molestias.</td>
-                                    <td class="text-nowrap">Rp. 20.000</td>
+                                    <td class="text-nowrap">Rp. 120.000</td>
                                     <td>20</td>
                                     <td>
-                                        <img class="rounded-lg w-16" src="image/es-jeruk.jpg" alt="">
+                                        <img class="rounded-lg w-16" src="image/teh stevia.jpeg" alt="">
+                                    </td>
+                                    <td>
+                                        <button onclick="modalEditData.showModal()" class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </button>
+                                        <button onclick="modalHapusData.showModal()" class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Liquid Stevia</td>
+                                    <td class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                                        molestias.</td>
+                                    <td class="text-nowrap">Rp. 96.000</td>
+                                    <td>20</td>
+                                    <td>
+                                        <img class="rounded-lg w-16" src="image/liquid stevia.jpeg" alt="">
                                     </td>
                                     <td>
                                         <button onclick="modalEditData.showModal()" class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
