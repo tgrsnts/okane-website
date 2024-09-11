@@ -48,8 +48,8 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
                                 <input type="search" id="default-search"
-                                    class="block w-full px-2 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:border-first"
-                                    placeholder="Cari di Kabita" required />
+                                    class="block w-full px-2 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary"
+                                    placeholder="Cari di HydraTiva" required />
                                 <!-- <button type="submit"
                                     class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800">Search</button> -->
                             </div>
@@ -192,7 +192,8 @@
                 </div>
                 <div class="flex flex-col gap-3 bg-white rounded-md p-8">
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="p-2 rounded-md bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white w-40"
+                    <button
+                        class="p-2 rounded-md bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white w-40"
                         onclick="modalTambahData.showModal()">Tambah Data</button>
                     <dialog id="modalTambahData" class="modal">
                         <div class="modal-box">
@@ -273,7 +274,7 @@
                                         class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first">
                                 </div>
                                 <div class="flex flex-col">
-                                    <label for="gambar">Gambar</label>                                   
+                                    <label for="gambar">Gambar</label>
                                     <input type="file" id="gambar" placeholder="gambar"
                                         class="w-full rounded-md bg-gray-100 file:mr-5 file:py-1 file:px-3 file:border-none file:w-full file:bg-gray-100 file:text-stone-700 hover:file:cursor-pointer hover:file:bg-red-50 hover:file:text-first focus:outline-none focus:ring focus:ring-first focus-border-first">
                                 </div>
@@ -297,7 +298,8 @@
                                 <div class="flex flex-col">
                                     <label for="nama">Nama</label>
                                     <input type="text" id="nama" placeholder="Masukan nama menu"
-                                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first" value="HydraTiva">
+                                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first"
+                                        value="HydraTiva">
                                 </div>
                                 <div class="flex flex-col">
                                     <label for="deskripsi">Deskripsi</label>
@@ -308,7 +310,8 @@
                                 <div class="flex flex-col">
                                     <label for="harga">Harga</label>
                                     <input type="text" id="harga" placeholder="Masukan nomor harga anda"
-                                        class="input-number w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first" value="1500000">
+                                        class="input-number w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first"
+                                        value="1500000">
                                     <script>
                                         function formatRupiah(angka, prefix) {
                                             var number_string = angka.replace(/[^,\d]/g, '').toString(), //Menghapus huruf
@@ -357,10 +360,11 @@
                                 <div class="flex flex-col">
                                     <label for="stok">Stok</label>
                                     <input type="stok" id="stok" placeholder="Masukan stok"
-                                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first" value="20">
+                                        class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-first focus-border-first"
+                                        value="20">
                                 </div>
                                 <div class="flex flex-col">
-                                    <label for="gambar">Gambar</label> 
+                                    <label for="gambar">Gambar</label>
                                     <!-- <img class="w-4" src="image/ayam-goreng.jpg" alt="">                                   -->
                                     <input type="file" id="gambar" placeholder="gambar"
                                         class="w-full rounded-md bg-gray-100 file:mr-5 file:py-1 file:px-3 file:border-none file:w-full file:bg-gray-100 file:text-stone-700 hover:file:cursor-pointer hover:file:bg-primary hover:file:text-white focus:outline-none focus:ring focus:ring-primary focus-border-primary">
@@ -415,7 +419,8 @@
                                 <tr>
                                     <td>1.</td>
                                     <td>HydraTiva</td>
-                                    <td class="text-wrap">HydraTiva adalah alat penyiraman otomatis untuk tanaman stevia yang terintegrasi dengan
+                                    <td class="text-wrap">HydraTiva adalah alat penyiraman otomatis untuk tanaman stevia
+                                        yang terintegrasi dengan
                                         aplikasi.</td>
                                     <td class="text-nowrap">Rp. 1.500.000</td>
                                     <td>20</td>
@@ -423,10 +428,12 @@
                                         <img class="rounded-lg w-16" src="image/Group 185.png" alt="">
                                     </td>
                                     <td>
-                                        <button onclick="modalEditData.showModal()" class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
+                                        <button onclick="modalEditData.showModal()"
+                                            class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
                                             <i class="fa-solid fa-pencil"></i>
                                         </button>
-                                        <button onclick="modalHapusData.showModal()" class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
+                                        <button onclick="modalHapusData.showModal()"
+                                            class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
                                     </td>
@@ -443,10 +450,12 @@
                                         <img class="rounded-lg w-16" src="image/Group 186.png" alt="">
                                     </td>
                                     <td>
-                                        <button onclick="modalEditData.showModal()" class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
+                                        <button onclick="modalEditData.showModal()"
+                                            class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
                                             <i class="fa-solid fa-pencil"></i>
                                         </button>
-                                        <button onclick="modalHapusData.showModal()" class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
+                                        <button onclick="modalHapusData.showModal()"
+                                            class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
                                     </td>
@@ -463,10 +472,12 @@
                                         <img class="rounded-lg w-16" src="image/teh stevia.jpeg" alt="">
                                     </td>
                                     <td>
-                                        <button onclick="modalEditData.showModal()" class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
+                                        <button onclick="modalEditData.showModal()"
+                                            class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
                                             <i class="fa-solid fa-pencil"></i>
                                         </button>
-                                        <button onclick="modalHapusData.showModal()" class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
+                                        <button onclick="modalHapusData.showModal()"
+                                            class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
                                     </td>
@@ -483,10 +494,12 @@
                                         <img class="rounded-lg w-16" src="image/liquid stevia.jpeg" alt="">
                                     </td>
                                     <td>
-                                        <button onclick="modalEditData.showModal()" class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
+                                        <button onclick="modalEditData.showModal()"
+                                            class="w-8 h-8 rounded-md text-white bg-green-600 hover:bg-green-700">
                                             <i class="fa-solid fa-pencil"></i>
                                         </button>
-                                        <button onclick="modalHapusData.showModal()" class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
+                                        <button onclick="modalHapusData.showModal()"
+                                            class="w-8 h-8 rounded-md text-white bg-red-600 hover:bg-red-700">
                                             <i class="fa-solid fa-trash"></i>
                                         </button>
                                     </td>
